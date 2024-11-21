@@ -60,7 +60,7 @@ void setup()
 void loop()
 {
   // Code for sequencer
-  bool serialState = (digitalRead(WSJT_PIN) == LOW);
+  bool serialState = (digitalRead(WSJT_PIN) == HIGH);
   bool switchState = _switchState;
  
   bool state = (digitalRead(SWITCH_PIN) == LOW);
